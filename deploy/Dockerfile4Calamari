@@ -39,7 +39,4 @@ RUN pip3 install h5py==2.9.0
 RUN mkdir -p /usr/share/calamari/models/
 RUN cd /tmp && wget https://raw.githubusercontent.com/cloudfirst/xyapi_ws/m3/calamari_src/calamari.tar.gz
 RUN cd /tmp && tar zxvf calamari.tar.gz
-# RUN cd /tmp && wget https://raw.githubusercontent.com/nullawu/xyapi_ws/calamari-0_2_5/calamari_src/calamari-0.2.5-r.tar.gz
-# RUN cd /tmp && tar zxvf calamari-0.2.5-r.tar.gz
-# RUN cd /tmp && mv calamari-0.2.5-r calamari
 RUN cd /tmp/calamari && python3 setup.py install
